@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>javascript-assignment-2</title><link rel="icon" href="innovation.PNG">
+</head><body>
+    
+  <script>
+var frnds = ["john medina","Dean L. Radin","w. chan kim","Hal Elrod","runa khan","Kübra Dağlı","Ruma","Lin Quinan","Veronica Roth","Lee Yoo Chan",];
+document.write("<h2>My Friends are:</h2><ol>");
+for(let name of frnds) {document.write("<li>"+name+"</li>");}
+document.write("</ul>");
+function largestNameIs(frndsArray) {var targetIndex = 0;
+for(var i = 1; i < frndsArray.length; i++) {if(frndsArray[i].length > frndsArray[targetIndex].length)
+  {targetIndex = i;}}
+return frndsArray[targetIndex];}
+
+var largestName = largestNameIs(frnds);
+document.write("<h1>Largest Name of My Friendlist is: <strong><i>"+largestName+"</i></strong></h1>");</script>
+
+</body>
+</html>

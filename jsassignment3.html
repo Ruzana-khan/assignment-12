@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotelCost</title>
+</head>
+<body>
+
+    <script>
+
+        function hotelCost(day){var cost= 0;
+         if(day<=10)
+         {cost =day*1000}
+        
+        else if(day<=20){
+          var firstPart=10*1000;
+          var remaining=  day -10;
+          var secondPart =remaining*800;
+        }
+        else{
+            var firstPart=10*1000;
+            var secondPart=10*800;
+            var remaining=day-20;
+            var thirdPart =remaining*500;
+            cost=firstPart+secondPart+thirdPart;} 
+          return cost}
+            var totalCost=hotelCost(70);
+            document.write(totalCost)
+</script>        
+</body>
+</html>
